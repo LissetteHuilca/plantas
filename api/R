@@ -1,0 +1,30 @@
+fetch("http://localhost:3000/users", {
+  method: 'POST', // or 'PUT'
+  body: JSON.stringify({name:  'edu', errores: 0, aciertos: 1000}), // data can be `string` or {object}!
+  headers:{
+    'Content-Type': 'application/json'
+  }
+}).then(res => res)
+.catch(error => console.error('Error:', error))
+.then(response => console.log('Success:', response));
+
+
+
+http://localhost:3000/users
+
+http://localhost:3000/login/stefy/123
+
+Host
+    ec2-184-72-236-3.compute-1.amazonaws.com
+Database
+    d3tun958o229dc
+User
+    zaetljlrjfhtqu
+Port
+    5432
+Password
+    350f30751e6dc5a0edbe28bb3263f7a3e7503918ae00e11faa6f00d608cffe5d
+URI
+    postgres://zaetljlrjfhtqu:350f30751e6dc5a0edbe28bb3263f7a3e7503918ae00e11faa6f00d608cffe5d@ec2-184-72-236-3.compute-1.amazonaws.com:5432/d3tun958o229dc
+Heroku CLI
+    heroku pg:psql postgresql-round-00680 --app servicioplantas
